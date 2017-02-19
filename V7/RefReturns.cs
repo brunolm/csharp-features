@@ -1,6 +1,7 @@
+// https://github.com/dotnet/roslyn/issues/118
 namespace CsharpFeatures.V7
 {
-    public class RefTest
+    public class RefReturns
     {
         public void Usage()
         {

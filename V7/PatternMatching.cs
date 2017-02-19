@@ -1,5 +1,4 @@
-using System;
-
+// https://github.com/dotnet/roslyn/blob/master/docs/features/patterns.md
 namespace CsharpFeatures.V7
 {
     interface IShape
@@ -15,9 +14,19 @@ namespace CsharpFeatures.V7
         public int Length => 1;
     }
 
-    public class SwitchTest
+    public class PatternMatching
     {
-        public void Usage()
+        public void Is()
+        {
+            object o = 1;
+
+            if (o is int i)
+            {
+                System.Console.WriteLine($"Object is int, value: {i}");
+            }
+        }
+
+        public void Switch()
         {
             IShape shape = new Square();
 

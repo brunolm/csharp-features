@@ -1,9 +1,11 @@
+// https://github.com/dotnet/roslyn/blob/master/docs/features/tuples.md
+// https://github.com/dotnet/roslyn/blob/master/docs/features/deconstruction.md
 namespace CsharpFeatures.V7
 {
     // Core:  dotnet add package System.ValueTuple
     // Nuget: Install-Package "System.ValueTuple" -IncludePrerelease
 
-    public class TupleTest
+    public class Tuples
     {
         public (int, int) GetCoords()
         {

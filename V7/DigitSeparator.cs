@@ -1,6 +1,7 @@
+// https://github.com/dotnet/roslyn/issues/216
 namespace CsharpFeatures.V7
 {
-    public class LiteralsTest
+    public class DigitSeparator
     {
         public void Usage()
         {

@@ -2,9 +2,9 @@ namespace CsharpFeatures.V7
 {
     using System;
 
-    public class ExceptionsTest
+    public class Exceptions
     {
-        public void Usage()
+        public void CatchWhen()
         {
             try
             {
@@ -13,6 +13,12 @@ namespace CsharpFeatures.V7
             catch (Exception ex) when (ex.Message.EndsWith("!"))
             {
             }
+        }
+
+        public void ThrowInline()
+        {
+            // https://github.com/dotnet/roslyn/blob/master/docs/features/throwexpr.md
+            var x = true ? throw new ArgumentNullException() : false;
         }
     }
 }
